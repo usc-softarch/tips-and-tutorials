@@ -1,0 +1,3 @@
+This repository is to hold a collection of tips and tutorials that I've put together, mostly for myself or others working on ARCADE, so that I won't have to repeat explanations or search for the same things multiple times. If, in the future, this org comes to hold projects other than ARCADE, this repo may be expanded to include material from others. Each directory contains a single README.md file, so that one may navigate through the directories to see their respective materials. There are better ways to do this: if anyone volunteers to make a github.io or wiki, I am open to it.
+
+Marcelo Schmitt Laser
