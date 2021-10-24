@@ -12,27 +12,27 @@ Example usages of RegEx are trying to locate a variable sequence in a text file,
 
 A few symbols have special meanings in a POSIX RegEx. The most commonly used ones are:
 
-* [ ] : Square brackets are used to indicate a character set. When used in a RegEx, a character set indicates a position in the pattern that may be matched to any one character in the set. For example, `\[abc\]` will match either `a`, `b` or `c`, but not the sequence abc.
-* . : A dot outside a character set is a wildcard for any character except NULL and Newline. Inside a character set, it is treated as a literal dot.
-* ^ : Indicates that the token must be matched from the beginning of the input string. For example, `^abc` will match `abc`, but not `dabc`.
-* $ : Indicates that the token must be matched to the end of the input string. For example, `abc$` will match `dabc`, but not `abcd`.
-* ( ) : Indicates a sub-expression, which may be marked for later use. They may then be referred to by back-reference, see `/i`.
-* \* : A `\*` following a symbol, character or character set indicates that it may be repeated zero or more times in the token.
-* \+ : A `\+` following a symbol, character or character set indicates that it may be repeated one or more times in the token.
-* ? : A `?` following a symbol, character or character set indicates that it is optional, that is, it may appear zero or one times in the token.
-* { } : A `{ }` after a symbol, character or character set is a precise way of determining repetition.
-    * {n} : Indicates the atom must repeat exactly `n` times.
-    * {n,} : Indicates the atom must repeat at least `n` times.
-    * {n,m} : Indicates the atom must repeat at least `n` and at most `m` times.
-* /i : Indicates a back-reference to a previous sub-expression. `i` may vary between 1 and 9, and will match the accordingly indexed sub-expression based on the order they appear in the RegEx. For example, `(a*).*/1` indicates a token that begins and ends with the same number of trailing `a`'s.
-* | : Indicates an `OR` operation over the pattern. For example, `a|b` will match any string that contains either the letter `a`, `b` or both, regardless of order. `ab(c|d)` will match any string containing a sub-string `ab` followed by either a `c` or a `d`.
+* `[ ]` : Square brackets are used to indicate a character set. When used in a RegEx, a character set indicates a position in the pattern that may be matched to any one character in the set. For example, `[abc]` will match either `a`, `b` or `c`, but not the sequence abc.
+* `.` : A dot outside a character set is a wildcard for any character except NULL and Newline. Inside a character set, it is treated as a literal dot.
+* `^` : Indicates that the token must be matched from the beginning of the input string. For example, `^abc` will match `abc`, but not `dabc`.
+* `$` : Indicates that the token must be matched to the end of the input string. For example, `abc$` will match `dabc`, but not `abcd`.
+* `( )` : Indicates a sub-expression, which may be marked for later use. They may then be referred to by back-reference, see `/i`.
+* `*` : A `\*` following a symbol, character or character set indicates that it may be repeated zero or more times in the token.
+* `+` : A `\+` following a symbol, character or character set indicates that it may be repeated one or more times in the token.
+* `?` : A `?` following a symbol, character or character set indicates that it is optional, that is, it may appear zero or one times in the token.
+* `{ }` : A `{ }` after a symbol, character or character set is a precise way of determining repetition.
+    * `{n}` : Indicates the atom must repeat exactly `n` times.
+    * `{n,}` : Indicates the atom must repeat at least `n` times.
+    * `{n,m}` : Indicates the atom must repeat at least `n` and at most `m` times.
+* `/i` : Indicates a back-reference to a previous sub-expression. `i` may vary between 1 and 9, and will match the accordingly indexed sub-expression based on the order they appear in the RegEx. For example, `(a*).*/1` indicates a token that begins and ends with the same number of trailing `a`'s.
+* `|` : Indicates an `OR` operation over the pattern. For example, `a|b` will match any string that contains either the letter `a`, `b` or both, regardless of order. `ab(c|d)` will match any string containing a sub-string `ab` followed by either a `c` or a `d`.
 
 ### Character sets
 
 Character sets have their own syntax, including certain pre-defined sets (not covered here).
 
-* ^ : Indicates a complement operation. That is, the token must match any character except those represented by the trailing sub-expression. For example, `\[^ab\]` must match any character except `a` or `b`
-* \- : Indicates a range. For example, `\[a-c\]` must match any character between `a` and `c`; `\[1-5\]` must match any character between `1` and `5`.
+* `^` : Indicates a complement operation. That is, the token must match any character except those represented by the trailing sub-expression. For example, `[^ab]` must match any character except `a` or `b`
+* `\-` : Indicates a range. For example, `[a-c]` must match any character between `a` and `c`; `[1-5]` must match any character between `1` and `5`.
 
 ## Examples
 
