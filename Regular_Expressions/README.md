@@ -4,7 +4,7 @@ This is a brief reference guide on a few simple regular expressions that find us
 
 ## Basics
 
-A regular expression (RegEx) is a representation of a finite state automaton, and is used to verify the presence of a string token within a string input. That is, a RegEx encodes a pattern which you want a string to "match". RegEx-based systems are typically programmed in a highly-optimized way, which is why they are superior to other, potentially simpler, ways of pattern matching.
+A regular expression (RegEx) is a representation of a finite state automaton, and is used to verify the presence of a token within a string input. That is, a RegEx encodes a pattern which you want a string to "match". RegEx-based systems are typically programmed in a highly-optimized way, which is why they are superior to other, potentially simpler, ways of pattern matching.
 
 Example usages of RegEx are trying to locate a variable sequence in a text file, checking if a string follows a certain pattern, or finding substrings to be replaced.
 
@@ -17,8 +17,8 @@ A few symbols have special meanings in a POSIX RegEx. The most commonly used one
 * `^` : Indicates that the token must be matched from the beginning of the input string. For example, `^abc` will match `abc`, but not `dabc`.
 * `$` : Indicates that the token must be matched to the end of the input string. For example, `abc$` will match `dabc`, but not `abcd`.
 * `( )` : Indicates a sub-expression, which may be marked for later use. They may then be referred to by back-reference, see `/i`.
-* `*` : A `\*` following a symbol, character or character set indicates that it may be repeated zero or more times in the token.
-* `+` : A `\+` following a symbol, character or character set indicates that it may be repeated one or more times in the token.
+* `*` : A `*` following a symbol, character or character set indicates that it may be repeated zero or more times in the token.
+* `+` : A `+` following a symbol, character or character set indicates that it may be repeated one or more times in the token.
 * `?` : A `?` following a symbol, character or character set indicates that it is optional, that is, it may appear zero or one times in the token.
 * `{ }` : A `{ }` after a symbol, character or character set is a precise way of determining repetition.
     * `{n}` : Indicates the atom must repeat exactly `n` times.
