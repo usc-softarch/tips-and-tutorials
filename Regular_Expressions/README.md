@@ -36,7 +36,7 @@ Character sets have their own syntax, including certain pre-defined sets (not co
 
 ## Examples
 
-I (Marcelo) will provide examples based off of my own necessity. These will be real examples from applications I make. Anyone may feel free to update this section with their own examples.
+I (Marcelo) will provide examples based off of my own necessity. These will be real examples from applications I make. Anyone may feel free to update this section with their own examples. For a large list of external examples, see https://regexr.com/ and look at Community Patterns.
 
 ### Matching any smell element in the old (BitBucket) version of ARCADE's .ser
 
